@@ -29,18 +29,19 @@ export default {
 
 .logo {
   height: 15vh;
+  padding-bottom: 20px;
 }
 
 .title {
   display: block;
   font-weight: 300;
-  color: #35495e;
+  color: var(--darker);
   letter-spacing: 1px;
 }
 
 .subtitle {
   font-weight: 300;
-  color: var(--primary);
+  color: var(--dark-transp);
   word-spacing: 5px;
   padding-bottom: 15px;
 }

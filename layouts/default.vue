@@ -115,6 +115,7 @@ a {
   --secondary: #0b5d9e;
   --secondary-2: #5ab0b2;
   --dark: #3d4449;
+  --dark-transp: rgba(61, 68, 73, 0.5);
   --darker: #0f3535;
   --gray: #e2e2e2;
   --light: #efefef;

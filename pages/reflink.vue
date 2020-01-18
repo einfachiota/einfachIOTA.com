@@ -59,20 +59,6 @@ export default {
   height: 15vh;
 }
 
-.title {
-  display: block;
-  font-weight: 300;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  color: var(--primary);
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
 .list {
   display: flex;
   flex-direction: column;
