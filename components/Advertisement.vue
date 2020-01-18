@@ -59,7 +59,7 @@ export default {}
   font-family: 'Roboto Slab', serif;
   padding: 0 10px;
   box-sizing: border-box;
-  border-bottom: 1px solid var(--light);
+  border-bottom: 5px solid var(--primary);
   z-index: 1000;
   .magazine-text__mobile {
     display: none;
