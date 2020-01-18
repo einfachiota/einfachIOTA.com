@@ -1,6 +1,7 @@
 <template>
   <div class="container">
     <div>
+      <h2>{{ $t('greeting') }}</h2>
       <img class="logo" src="~/assets/logo.svg" alt="einfachIOTA logo" />
       <h1 class="title">einfachIOTA.com</h1>
       <h2 class="subtitle">Earn IOTA with the magazine via reflinks</h2>

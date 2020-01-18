@@ -44,8 +44,25 @@ module.exports = {
     '@nuxtjs/pwa',
     // Doc: https://github.com/nuxt-community/dotenv-module
     '@nuxtjs/dotenv',
-    'nuxt-clipboard2'
+    'nuxt-clipboard2',
+    'nuxt-i18n'
   ],
+
+  i18n: {
+    locales: ['en', 'de'],
+    defaultLocale: 'en',
+    vueI18n: {
+      fallbackLocale: 'en',
+      messages: {
+        en: {
+          greeting: 'Hello world!'
+        },
+        de: {
+          greeting: 'Hallo Welt!'
+        }
+      }
+    }
+  },
   /*
    ** Axios module configuration
    ** See https://axios.nuxtjs.org/options

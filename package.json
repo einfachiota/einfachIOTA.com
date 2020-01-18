@@ -31,7 +31,8 @@
     "element-ui": "^2.4.11",
     "express": "^4.16.4",
     "nuxt": "^2.0.0",
-    "nuxt-clipboard2": "^0.2.1"
+    "nuxt-clipboard2": "^0.2.1",
+    "nuxt-i18n": "^6.4.1"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^1.0.1",
