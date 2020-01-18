@@ -29,7 +29,7 @@
     <div v-else class="refLink-box">
       <h3>Here is your ref link, share it!</h3>
       <p @click="copyRefLink(refLink)" class="refLink">{{ refLink }}</p>
-      <el-button type="default" @click="copyRefLink(refLink)">Copy</el-button>
+      <el-button @click="copyRefLink(refLink)" type="default">Copy</el-button>
     </div>
   </div>
 </template>
