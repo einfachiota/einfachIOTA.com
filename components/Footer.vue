@@ -38,6 +38,9 @@
         <a href="https://tanglebay.org" target="_blank" class="footer-main-link"
           >Tangle Bay</a
         >
+        <a href="https://iotashops.com" target="_blank" class="footer-main-link"
+          >IOTAshops.com</a
+        >
       </div>
       <div class="footer-main">
         <h4>{{ $t('footer.iota') }}</h4>
