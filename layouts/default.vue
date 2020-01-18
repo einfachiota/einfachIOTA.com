@@ -144,6 +144,10 @@ a {
   padding: 15px 30px !important;
   transition: all 200ms ease-in-out !important;
   border: none !important;
+  &:hover {
+    color: var(--primary) !important;
+    background-color: var(--white) !important;
+  }
 }
 .el-button--primary {
   background-color: var(--primary) !important;

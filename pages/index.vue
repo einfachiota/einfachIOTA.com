@@ -2,16 +2,10 @@
   <div class="container">
     <div>
       <img class="logo" src="~/assets/logo.svg" alt="einfachIOTA logo" />
-      <h1 class="title">
-        einfachIOTA.com
-      </h1>
-      <h2 class="subtitle">
-        Earn IOTA with the magazine
-      </h2>
-      <div class="links">
-        <a href="https://nuxtjs.org/" target="_blank" class="button--green">
-          Learn more
-        </a>
+      <h1 class="title">einfachIOTA.com</h1>
+      <h2 class="subtitle">Earn IOTA with the magazine via reflinks</h2>
+      <div class="more">
+        <nuxt-link to="/reflink">Learn more</nuxt-link>
       </div>
     </div>
   </div>
@@ -46,12 +40,13 @@ export default {
 
 .subtitle {
   font-weight: 300;
-  color: #526488;
+  color: var(--primary);
   word-spacing: 5px;
   padding-bottom: 15px;
 }
 
-.links {
+.more {
   padding-top: 15px;
+  font-size: 1.5em;
 }
 </style>
