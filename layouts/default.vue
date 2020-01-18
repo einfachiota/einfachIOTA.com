@@ -1,15 +1,17 @@
 <template>
   <div>
+    <Advertisement />
     <nuxt />
     <Footer />
   </div>
 </template>
 
 <script>
+import Advertisement from '~/components/Advertisement.vue'
 import Footer from '~/components/Footer.vue'
 
 export default {
-  components: { Footer }
+  components: { Advertisement, Footer }
 }
 </script>
 
@@ -26,6 +28,7 @@ html {
   box-sizing: border-box;
 }
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400|Roboto+Slab:700');
+
 body {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
@@ -33,58 +36,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   color: var(--dark);
 }
-@keyframes shake-animation {
-  0% {
-    transform: translate(0, 0);
-  }
-  1.78571% {
-    transform: translate(5px, 0);
-  }
-  3.57143% {
-    transform: translate(0, 0);
-  }
-  5.35714% {
-    transform: translate(5px, 0);
-  }
-  7.14286% {
-    transform: translate(0, 0);
-  }
-  8.92857% {
-    transform: translate(5px, 0);
-  }
-  10.71429% {
-    transform: translate(0, 0);
-  }
-  100% {
-    transform: translate(0, 0);
-  }
-}
-.magazine-ad {
-  position: fixed;
-  height: 60px;
-  background-color: var(--white);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  color: var(--dark);
-  font-size: 24px;
-  font-weight: bold;
-  font-family: 'Roboto Slab', serif;
-  padding: 0 10px;
-  box-sizing: border-box;
-  border-bottom: 1px solid var(--light);
-  z-index: 1000;
-  .magazine-text__mobile {
-    display: none;
-  }
-  .el-button {
-    animation: shake-animation 3.72s ease infinite;
-    transform-origin: 50% 50%;
-    margin-left: 20px;
-    text-decoration: none;
-  }
-}
+
 .el-main {
   margin-top: 150px;
 }
@@ -228,26 +180,6 @@ button.el-button.el-button--light {
   p {
     font-size: 16px;
     line-height: 1.5;
-  }
-}
-@media only screen and (max-width: 920px) {
-  .magazine-ad {
-    span {
-      font-size: 16px;
-    }
-  }
-}
-@media only screen and (max-width: 424px) {
-  .magazine-ad {
-    span {
-      display: none;
-    }
-    .magazine-text {
-      display: none;
-    }
-    .magazine-text__mobile {
-      display: block;
-    }
   }
 }
 </style>

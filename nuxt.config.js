@@ -71,6 +71,11 @@ module.exports = {
             iota_more: 'More',
             imprint: 'Imprint',
             privacy_policy: ' Privacy Policy'
+          },
+          advertisement: {
+            text: 'First einfachIOTA magazine pre-sale - limited edition',
+            text_short: 'Magazine pre-sale',
+            button: 'Visit Shop'
           }
         },
         de: {
@@ -90,6 +95,11 @@ module.exports = {
             iota_more: 'Mehr',
             imprint: 'Impressum',
             privacy_policy: 'Datenschutz'
+          },
+          advertisement: {
+            text: 'Erstes einfach IOTA Magazine Presale - limitierte Auflage',
+            text_short: 'einfachIOTA Magazine',
+            button: 'Zum Shop'
           }
         }
       }
