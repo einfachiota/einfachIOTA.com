@@ -5,52 +5,58 @@
         <router-link to="/" class="footer-logo" exact-active-class="active">
           <img alt="einfachIOTA" class="logo" src="../assets/logo.svg" />
         </router-link>
-        <p>IOTA einfach erklärt.</p>
-        <p>
-          Unsere Aufgabe ist es, deutschsprachigen Inhalt rund um IOTA
-          bereitzustellen und IOTA in einfacher Sprache zu erklären.
-        </p>
+        <p>{{ $t('ei_description') }}</p>
+        <p>{{ $t('ei_mission') }}</p>
       </div>
       <div class="footer-main">
-        <h4>einfachIOTA</h4>
+        <h4>{{ $t('footer.title') }}</h4>
         <div class="divider"></div>
         <!--<a href="https://magazin.einfachiota.de" target="_blank" class="footer-main-link">Magazin</a>-->
         <a
           href="https://blog.einfachiota.de/"
           target="_blank"
           class="footer-main-link"
-          >Blog</a
+        >
+          <p>{{ $t('footer.blog') }}</p></a
         >
         <a
-          href="https://magazin.einfachiota.de/"
+          href="https://shop.einfachiota.de/"
           target="_blank"
           class="footer-main-link"
-          >Magazine</a
+          >{{ $t('footer.magazine') }}</a
         >
         <a
           href="https://community.einfachiota.de/"
           target="_blank"
           class="footer-main-link"
-          >Communinty</a
+          >{{ $t('footer.community') }}</a
         >
       </div>
       <div class="footer-main">
-        <h4>Partner</h4>
+        <h4>{{ $t('footer.partners') }}</h4>
         <div class="divider"></div>
         <a href="https://tanglebay.org" target="_blank" class="footer-main-link"
           >Tangle Bay</a
         >
       </div>
       <div class="footer-main">
-        <h4>IOTA</h4>
+        <h4>{{ $t('footer.iota') }}</h4>
         <div class="divider"></div>
-        <a href="https://www.iota.org" target="_blank" class="footer-main-link"
-          >Offizielle Webseite</a
+        <a
+          href="https://www.iota.org"
+          target="_blank"
+          class="footer-main-link"
+          >{{ $t('footer.iota_web') }}</a
         >
-        <a href="https://blog.iota.org" target="_blank" class="footer-main-link"
-          >News</a
+        <a
+          href="https://blog.iota.org"
+          target="_blank"
+          class="footer-main-link"
+          >{{ $t('footer.iota_news') }}</a
         >
-        <a href="/#/pages/linkliste" class="footer-main-link">Mehr</a>
+        <a href="/#/pages/linkliste" class="footer-main-link">{{
+          $t('footer.iota_more')
+        }}</a>
       </div>
     </div>
     <div class="row footer-bottom">
@@ -76,12 +82,12 @@
         >
       </div>
       <div class="footer-bottom-col">
-        <router-link to="imprint" class="footer-main-link"
-          >Impressum</router-link
-        >
-        <router-link to="privacy" class="footer-main-link"
-          >Datenschutz</router-link
-        >
+        <router-link to="imprint" class="footer-main-link">{{
+          $t('footer.imprint')
+        }}</router-link>
+        <router-link to="privacy" class="footer-main-link">{{
+          $t('footer.privacy_policy')
+        }}</router-link>
       </div>
     </div>
   </div>

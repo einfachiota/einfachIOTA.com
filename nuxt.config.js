@@ -55,10 +55,42 @@ module.exports = {
       fallbackLocale: 'en',
       messages: {
         en: {
-          greeting: 'Hello world!'
+          greeting: 'Hello world!',
+          ei_description: 'IOTA simply explained.',
+          ei_mission:
+            'Our mission is to provide content around IOTA and to explain IOTA in simple language.',
+          footer: {
+            title: 'einfachIOTA',
+            blog: 'Blog',
+            magazine: 'Magazine',
+            community: 'Community',
+            partners: 'Partners',
+            iota_title: 'IOTA',
+            iota_web: 'Official Website',
+            iota_news: 'News',
+            iota_more: 'More',
+            imprint: 'Imprint',
+            privacy_policy: ' Privacy Policy'
+          }
         },
         de: {
-          greeting: 'Hallo Welt!'
+          greeting: 'Hallo Welt!',
+          ei_description: 'IOTA einfach erklärt.',
+          ei_mission:
+            'Unsere Aufgabe ist es, deutschsprachigen Inhalt rund um IOTA bereitzustellen und IOTA in einfacher Sprache zu erklären.',
+          footer: {
+            title: 'einfachIOTA',
+            blog: 'Blog',
+            magazine: 'Magazin',
+            community: 'Community',
+            partners: 'Partner',
+            iota_title: 'IOTA',
+            iota_web: 'Offizielle Webseite',
+            iota_news: 'News',
+            iota_more: 'Mehr',
+            imprint: 'Impressum',
+            privacy_policy: 'Datenschutz'
+          }
         }
       }
     }
