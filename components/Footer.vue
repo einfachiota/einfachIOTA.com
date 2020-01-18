@@ -17,7 +17,7 @@
           target="_blank"
           class="footer-main-link"
         >
-          <p>{{ $t('footer.blog') }}</p></a
+          {{ $t('footer.blog') }}</a
         >
         <a
           href="https://shop.einfachiota.de/"
