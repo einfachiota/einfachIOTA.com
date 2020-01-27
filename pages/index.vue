@@ -13,6 +13,11 @@
         </div>
       -->
       <h2 class="subtitle">The first einfachIOTA magazine.</h2>
+      <div class="bullet-points">
+        <p>IOTA explained</p>
+        <p>Interview with Dominik Schiener</p>
+        <p>and much more...</p>
+      </div>
       <a :href="url" target="_blank" class="el-button el-button--primary">
         {{ $t('advertisement.button') }}
       </a>
@@ -29,12 +34,12 @@
 
 <script>
 export default {
+  components: {},
   data() {
     return {
       url: `${process.env.shopUrl}?lang=en&refLink=${process.env.refAddress}`
     }
-  },
-  components: {}
+  }
 }
 </script>
 
@@ -108,7 +113,6 @@ export default {
   width: 100%;
   border-radius: 10px;
 }
-
 /* Animate Background Image */
 
 @keyframes animate {
