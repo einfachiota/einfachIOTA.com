@@ -119,5 +119,11 @@ module.exports = {
      ** You can extend webpack config here
      */
     extend(config, ctx) {}
+  },
+  env: {
+    shopUrl: process.env.SHOP_URL || 'http://localhost:5001',
+    refAddress:
+      process.env.REF_ADDRESS ||
+      'IKTYKKCZFZZECSFIJYWYSUUTXCIBNIFPFSPGUIUUAYONDYUSHEZVQBNPDYUTDMTNTHBLABCYYLZKLGIVCINGBALQVX'
   }
 }
