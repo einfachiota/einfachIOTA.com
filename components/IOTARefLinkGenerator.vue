@@ -61,8 +61,9 @@ export default {
       this.$refs[formName].validate((valid) => {
         if (valid) {
           console.log('submit!!', formName)
+
           this.refLink =
-            'https://magazin.einfachiota.de?refLink=' + this.ruleForm.address
+            process.env.shopUrl + '?lang=en&refLink=' + this.ruleForm.address
         } else {
           console.log('error submit!!')
           return false
