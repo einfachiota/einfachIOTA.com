@@ -4,18 +4,20 @@
     <span class="magazine-text__mobile">{{
       $t('advertisement.text_short')
     }}</span>
-    <a
-      target="_blank"
-      href="https://magazine.einfachiota.com"
-      class="el-button el-button--primary"
-    >
+    <a :href="url" target="_blank" class="el-button el-button--primary">
       {{ $t('advertisement.button') }}
     </a>
   </div>
 </template>
 
 <script>
-export default {}
+export default {
+  data() {
+    return {
+      url: `${process.env.shopUrl}?lang=en&refLink=${process.env.refAddress}`
+    }
+  }
+}
 </script>
 
 <style lang="scss">
