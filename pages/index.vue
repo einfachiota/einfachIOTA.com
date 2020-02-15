@@ -6,12 +6,10 @@
         <h2 class="greeting">{{ $t('greeting') }}</h2>
       </div>
       <h1 class="title">einfachIOTA.com</h1>
-      <!-- 
-        <h2 class="subtitle">Earn IOTA with the magazine via reflinks</h2>
-        <div class="more">
-          <nuxt-link to="/reflink">Learn more</nuxt-link>
-        </div>
-      -->
+      <h2 class="subtitle">Earn IOTA with the magazine via reflinks</h2>
+      <div class="more">
+        <nuxt-link to="/reflink">Learn more</nuxt-link>
+      </div>
       <h2 class="subtitle">The first einfachIOTA magazine.</h2>
       <div class="bullet-points">
         <p>IOTA explained</p>
@@ -37,7 +35,7 @@ export default {
   components: {},
   data() {
     return {
-      url: `${process.env.shopUrl}?lang=en&refLink=${process.env.refAddress}`
+      url: `${process.env.shopUrl}/en?refLink=${process.env.refAddress}`
     }
   }
 }
