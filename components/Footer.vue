@@ -43,7 +43,7 @@
         >
       </div>
       <div class="footer-main">
-        <h4>{{ $t('footer.iota') }}</h4>
+        <h4>{{ $t('footer.iota_title') }}</h4>
         <div class="divider"></div>
         <a
           href="https://www.iota.org"
