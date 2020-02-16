@@ -3,6 +3,7 @@
     <Navigation />
     <Hero />
     <Content />
+    <Socials />
     <Footer />
   </div>
 </template>
@@ -10,10 +11,11 @@
 <script>
 import Hero from '../components/Hero'
 import Content from '../components/Content'
+import Socials from '../components/Socials'
 import Navigation from '~/components/Navigation.vue'
 import Footer from '~/components/Footer.vue'
 export default {
-  components: { Navigation, Hero, Content, Footer },
+  components: { Navigation, Hero, Content, Socials, Footer },
   data() {
     return {
       url: `${process.env.shopUrl}/en?refLink=${process.env.refAddress}`

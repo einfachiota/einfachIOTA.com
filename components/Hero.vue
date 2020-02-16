@@ -3,12 +3,12 @@
     <video id="bg-video" autoplay muted loop>
       <source src="~/assets/09_events.mp4" type="video/mp4" />
     </video>
-    <div class="layer">
-      <div class="hello">
-        <h1 class="title">einfachIOTA.</h1>
-        <h2 class="subtitle">IOTA for everyone.</h2>
-      </div>
+    <div class="layer"></div>
+    <div class="hello">
+      <h1 class="title">einfachIOTA</h1>
+      <h2 class="subtitle">IOTA explained simple</h2>
     </div>
+    <img src="~/assets/icons/rounded-edge.svg" class="rounded-edge" />
   </div>
 </template>
 
@@ -27,6 +27,37 @@ export default {}
   overflow: hidden;
   z-index: -100;
   margin-top: 100px;
+  .rounded-edge {
+    position: absolute;
+    bottom: -3px;
+    right: -3px;
+  }
+  .hello {
+    position: absolute;
+    top: 75%;
+    left: 0;
+    color: var(--white);
+    text-align: left;
+    padding: 25px 50px;
+    max-width: 50%;
+    height: auto;
+    border-radius: 0 20px 20px 0;
+    background-color: var(--white);
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.25);
+    h1 {
+      color: var(--dark);
+      font-family: 'Open Sans';
+      font-weight: 900;
+      font-size: 64px;
+    }
+    h2 {
+      color: var(--dark);
+      font-family: 'Open Sans';
+      font-weight: 300;
+      font-size: 32px;
+      padding-bottom: 0;
+    }
+  }
   video {
     position: absolute;
     top: 0;
@@ -48,16 +79,6 @@ export default {}
       rgba(0, 183, 197, 0.9) 0%,
       rgba(0, 183, 197, 0.6) 100%
     );
-    .hello {
-      position: absolute;
-      top: 75%;
-      left: 0;
-      color: var(--white);
-      text-align: left;
-      padding: 50px;
-      max-width: 50%;
-      height: 100%;
-    }
   }
 }
 .hero {

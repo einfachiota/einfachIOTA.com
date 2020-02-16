@@ -2,25 +2,9 @@
   <div class="nav">
     <div class="nav__primary">
       <div class="logo">
-        <img src alt />
+        <img src="~/assets/icons/logo.svg" alt />
       </div>
-      <div class="menu">
-        <div class="menu__item active">
-          <span>Blog</span>
-        </div>
-        <div class="menu__item">
-          <span>Learn</span>
-        </div>
-        <div class="menu__item">
-          <span>Shop</span>
-        </div>
-        <div class="menu__item">
-          <span>Community</span>
-        </div>
-        <div class="menu__item">
-          <span>Accosiation</span>
-        </div>
-      </div>
+      <div class="menu"></div>
     </div>
     <div class="nav__secondary">
       <div class="nav__meta">
@@ -90,10 +74,25 @@ export default {}
     display: flex;
     align-items: center;
     &__item {
+      position: relative;
+      display: flex;
+      justify-content: center;
       background-color: var(--light_50);
       border-radius: 10px;
       margin: 0 10px;
       padding: 15px 30px;
+      .button-clip {
+        height: 7px;
+        width: 48px;
+        position: absolute;
+        bottom: -7px;
+        transition: var(--transition);
+        &.top {
+          bottom: auto;
+          top: -7px;
+          transform: rotate(180deg);
+        }
+      }
       span {
         font-size: 16px;
         font-weight: 900;
@@ -103,6 +102,15 @@ export default {}
         span {
           color: var(--white);
         }
+        .button-clip {
+          bottom: 0;
+          &.top {
+            top: 0;
+          }
+        }
+      }
+      &:hover {
+        background-color: var(--primary);
       }
     }
   }
