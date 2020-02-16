@@ -1,31 +1,24 @@
 <template>
   <div class="container">
-    <div>
-      <img class="logo" src="~/assets/logo.svg" alt="einfachIOTA logo" />
-      <div class="greeting-box">
-        <h2 class="greeting">{{ $t('greeting') }}</h2>
+    <div class="hero">
+      <video id="bg-video" autoplay muted loop>
+        <source src="~/assets/09_events.mp4" type="video/mp4" />
+      </video>
+      <div class="layer">
+        <div class="hello">
+          <h1 class="title">einfachIOTA.</h1>
+          <h2 class="subtitle">IOTA for everyone.</h2>
+        </div>
       </div>
-      <h1 class="title">einfachIOTA.com</h1>
-      <h2 class="subtitle">Earn IOTA with the magazine via reflinks</h2>
-      <div class="more">
-        <nuxt-link to="/reflink">Learn more</nuxt-link>
-      </div>
-      <h2 class="subtitle">The first einfachIOTA magazine.</h2>
-      <div class="bullet-points">
-        <p>IOTA explained</p>
-        <p>Interview with Dominik Schiener</p>
-        <p>and much more...</p>
-      </div>
-      <a :href="url" target="_blank" class="el-button el-button--primary">
-        {{ $t('advertisement.button') }}
-      </a>
-      <br />
-      <br />
-      <img
-        class="magazine"
-        src="~/assets/front_mag01_en.jpg"
-        alt="einfachIOTA magazine"
-      />
+    </div>
+    <div class="content ecosystem">
+      <ul class="ecosystem-entries">
+        <li>Blog</li>
+        <li>Learn</li>
+        <li>Shop</li>
+        <li>Community</li>
+        <li>Verein</li>
+      </ul>
     </div>
   </div>
 </template>
@@ -43,12 +36,63 @@ export default {
 
 <style lang="scss">
 .container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.hero {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -100;
+  video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: auto;
+    height: 100%;
+    filter: blur(5px);
+  }
+  .layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.75;
+    background: rgb(0, 183, 197);
+    background: radial-gradient(
+      circle,
+      rgba(0, 183, 197, 0.9) 0%,
+      rgba(0, 183, 197, 0.6) 100%
+    );
+    .hello {
+      position: absolute;
+      top: 75%;
+      left: 0;
+      color: var(--white);
+      text-align: left;
+      padding: 50px;
+      max-width: 50%;
+      height: 100%;
+    }
+  }
+}
+
+.content {
+  display: block;
+  width: 100%;
+  height: 100vh;
+  .ecosystem {
+    .ecosystem-entries {
+      list-style: none;
+      display: flex;
+      flex-wrap: nowrap;
+    }
+  }
 }
 
 .logo {
@@ -58,14 +102,15 @@ export default {
 
 .title {
   display: block;
-  font-weight: 300;
-  color: var(--darker);
+  font-weight: 700;
+  color: var(--white);
   letter-spacing: 1px;
+  font-size: 3.5em;
 }
 
 .subtitle {
   font-weight: 300;
-  color: var(--dark-transp);
+  color: var(--darker);
   word-spacing: 5px;
   padding-bottom: 15px;
 }
