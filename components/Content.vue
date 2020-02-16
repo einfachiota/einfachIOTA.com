@@ -19,8 +19,8 @@
                 <span>{{ listItem }}</span>
               </div>
             </div>
-            <div class="btn btn--primary">
-              <span>{{ item.link.text }}</span>
+            <div class="link">
+              <a :href="item.link.url" target="_blank">{{ item.link.text }}</a>
             </div>
           </div>
         </div>
@@ -95,7 +95,7 @@ export default {
           ],
           link: {
             text: 'Discover Community',
-            url: 'https://commuity.einfachiota.de'
+            url: 'https://community.einfachiota.de'
           }
         },
         {
@@ -168,8 +168,25 @@ p {
       border-radius: 10px;
       margin-right: 8px;
     }
-    span {
-    }
+  }
+}
+
+.link {
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  height: 40px;
+  padding: 0 30px;
+  background-color: var(--light);
+  border-radius: 50px;
+  font-weight: 900;
+  font-size: 14px;
+  background-color: var(--primary);
+  a {
+    color: var(--white);
+    text-decoration: none;
   }
 }
 </style>
