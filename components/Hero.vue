@@ -65,6 +65,10 @@ export default {}
     width: auto;
     height: 100%;
     filter: blur(5px);
+    @media only screen and (min-width: 2200px) {
+      height: auto;
+      width: 100%;
+    }
   }
   .layer {
     position: absolute;
