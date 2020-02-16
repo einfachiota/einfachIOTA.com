@@ -1,17 +1,12 @@
 <template>
   <div>
-    <Advertisement />
     <nuxt />
-    <Footer />
   </div>
 </template>
 
 <script>
-import Advertisement from '~/components/Advertisement.vue'
-import Footer from '~/components/Footer.vue'
-
 export default {
-  components: { Advertisement, Footer }
+  components: {}
 }
 </script>
 
@@ -27,7 +22,7 @@ html {
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
 }
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400|Roboto+Slab:700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,900,700|Roboto+Slab:700');
 
 body {
   margin: 0;
@@ -79,7 +74,8 @@ a {
   --dark-transp: rgba(61, 68, 73, 0.5);
   --darker: #0f3535;
   --gray: #e2e2e2;
-  --light: #efefef;
+  --light: rgba(234, 235, 243, 1);
+  --light_50: rgba(234, 235, 243, 0.5);
   --white: #ffffff;
   --white_5: rgba(255, 255, 255, 0.05);
   --white_10: rgba(255, 255, 255, 0.1);

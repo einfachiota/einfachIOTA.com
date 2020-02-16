@@ -1,31 +1,17 @@
 <template>
-  <div class="container">
-    <div class="hero">
-      <video id="bg-video" autoplay muted loop>
-        <source src="~/assets/09_events.mp4" type="video/mp4" />
-      </video>
-      <div class="layer">
-        <div class="hello">
-          <h1 class="title">einfachIOTA.</h1>
-          <h2 class="subtitle">IOTA for everyone.</h2>
-        </div>
-      </div>
-    </div>
-    <div class="content ecosystem">
-      <ul class="ecosystem-entries">
-        <li>Blog</li>
-        <li>Learn</li>
-        <li>Shop</li>
-        <li>Community</li>
-        <li>Verein</li>
-      </ul>
-    </div>
+  <div class="page">
+    <Navigation />
+    <Hero />
+    <Footer />
   </div>
 </template>
 
 <script>
+import Hero from '../components/Hero'
+import Navigation from '~/components/Navigation.vue'
+import Footer from '~/components/Footer.vue'
 export default {
-  components: {},
+  components: { Navigation, Hero, Footer },
   data() {
     return {
       url: `${process.env.shopUrl}/en?refLink=${process.env.refAddress}`
@@ -38,61 +24,6 @@ export default {
 .container {
   margin: 0;
   padding: 0;
-}
-
-.hero {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  overflow: hidden;
-  z-index: -100;
-  video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: auto;
-    height: 100%;
-    filter: blur(5px);
-  }
-  .layer {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0.75;
-    background: rgb(0, 183, 197);
-    background: radial-gradient(
-      circle,
-      rgba(0, 183, 197, 0.9) 0%,
-      rgba(0, 183, 197, 0.6) 100%
-    );
-    .hello {
-      position: absolute;
-      top: 75%;
-      left: 0;
-      color: var(--white);
-      text-align: left;
-      padding: 50px;
-      max-width: 50%;
-      height: 100%;
-    }
-  }
-}
-
-.content {
-  display: block;
-  width: 100%;
-  height: 100vh;
-  .ecosystem {
-    .ecosystem-entries {
-      list-style: none;
-      display: flex;
-      flex-wrap: nowrap;
-    }
-  }
 }
 
 .logo {
