@@ -38,7 +38,7 @@ export default {
           layout_inverted: false,
           heading: 'Blog',
           description:
-            'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est.',
+            'The headquarters of the editorial department. The free open source project - Ghost serves as the basis here. Ghost is a professional platform for creating online blogs or online publications. The backend offers the opportunity to manage the editorial team, which can create new content using an editor (similar to Medium). The articles can easily be loaded into other applications using a Javascript library.',
           icon: 'blog.svg',
           list: [
             'All articles from the IOTA Foundation.',
@@ -70,7 +70,7 @@ export default {
           layout_inverted: false,
           heading: 'Shop',
           description:
-            'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est.',
+            'All previously available magazines are available for purchase as a print or PDF version on the shop page. Merchandise and other products are also being considered. IOTA and Paypal as payment method. Everything ist build on ground up and is open-source.',
           icon: 'shop.svg',
           list: [
             'The einfachIOTA Magazine',
@@ -86,7 +86,7 @@ export default {
           layout_inverted: true,
           heading: 'Community',
           description:
-            'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est.',
+            'The community page is based on the community platform WoltLab. The community page is the entry point to participate. There is a forum, a comprehensive news system from all crypto messages, a calendar, an FAQ section, a glossary, a chat and the possibility to create your own blog.',
           icon: 'community.svg',
           list: [
             'Community Forum',
@@ -102,7 +102,7 @@ export default {
           layout_inverted: false,
           heading: 'Association',
           description:
-            'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est.',
+            'Everything about the “association”. Statutes, presentations, membership application, FAQ and everything new from the association (blog article with the tag “association”).',
           icon: 'verein.svg',
           list: [
             'Our vision and mission',
