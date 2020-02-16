@@ -20,7 +20,7 @@
               </div>
             </div>
             <div class="btn btn--primary">
-              <span>Discover News</span>
+              <span>{{ item.link.text }}</span>
             </div>
           </div>
         </div>
@@ -41,11 +41,14 @@ export default {
             'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est.',
           icon: 'blog.svg',
           list: [
-            'All the News from the foundation to the community',
-            'Get insights from many community Projects',
-            'We also interview People from around the community'
+            'All articles from the IOTA Foundation.',
+            'Project of the Week',
+            'Interviews and more!'
           ],
-          link: 'https://blog.einfachiota.com'
+          link: {
+            text: 'Discover Blog',
+            url: 'https://blog.einfachiota.com'
+          }
         },
         {
           layout_inverted: true,
@@ -54,11 +57,14 @@ export default {
             'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est.',
           icon: 'learn.svg',
           list: [
-            'All the News from the foundation to the community',
-            'Get insights from many community Projects',
-            'We also interview People from around the community'
+            'Tutorials and Workshops',
+            'Glossary and FAQ',
+            'Many examples as Open Source code'
           ],
-          link: 'https://blog.einfachiota.com'
+          link: {
+            text: 'Discover Learn',
+            url: 'https://learn.einfachiota.com'
+          }
         },
         {
           layout_inverted: false,
@@ -67,11 +73,14 @@ export default {
             'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est.',
           icon: 'shop.svg',
           list: [
-            'All the News from the foundation to the community',
-            'Get insights from many community Projects',
-            'We also interview People from around the community'
+            'The einfachIOTA Magazine',
+            'IOTA Affiliate Links',
+            'IOTA and einfachIOTA Merchandise (soon)'
           ],
-          link: 'https://blog.einfachiota.com'
+          link: {
+            text: 'Discover Shop',
+            url: 'https://shop.einfachiota.com'
+          }
         },
         {
           layout_inverted: true,
@@ -80,11 +89,14 @@ export default {
             'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est.',
           icon: 'community.svg',
           list: [
-            'All the News from the foundation to the community',
-            'Get insights from many community Projects',
-            'We also interview People from around the community'
+            'Community Forum',
+            'Discover user blogs or create your own',
+            'Get in contact with the Community via the Chat'
           ],
-          link: 'https://blog.einfachiota.com'
+          link: {
+            text: 'Discover Community',
+            url: 'https://commuity.einfachiota.de'
+          }
         },
         {
           layout_inverted: false,
@@ -93,11 +105,14 @@ export default {
             'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est.',
           icon: 'verein.svg',
           list: [
-            'All the News from the foundation to the community',
-            'Get insights from many community Projects',
-            'We also interview People from around the community'
+            'Our vision and mission',
+            'Our constitution',
+            'einfachIOTA e.V. A German non-profit association (soon)'
           ],
-          link: 'https://blog.einfachiota.com'
+          link: {
+            text: 'Discover Association',
+            url: 'https://association.einfachiota.com'
+          }
         }
       ]
     }
