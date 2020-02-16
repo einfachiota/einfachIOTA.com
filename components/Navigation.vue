@@ -31,13 +31,22 @@
         </div>
         <div class="socials">
           <div class="socials__item">
-            <img src alt />
+            <a href="https://twitter.com/einfachIOTA" target="_blank">
+              <img src="~/assets/icons/twitter_large.svg" alt />
+            </a>
           </div>
           <div class="socials__item">
-            <img src alt />
+            <a href="https://discord.gg/WdfXseU" target="_blank">
+              <img src="~/assets/icons/discord_large.svg" alt />
+            </a>
           </div>
           <div class="socials__item">
-            <img src alt />
+            <a
+              href="https://www.youtube.com/channel/UClEhfr5oh-bbH42XoXO4Pqw"
+              target="_blank"
+            >
+              <img src="~/assets/icons/youtube_large.svg" alt />
+            </a>
           </div>
         </div>
       </div>
