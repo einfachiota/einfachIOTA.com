@@ -50,9 +50,8 @@ export default {
 .magazine-ad {
   position: fixed;
   height: 60px;
-  background-color: var(--white);
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   width: 100%;
   color: var(--dark);
@@ -61,7 +60,6 @@ export default {
   font-family: 'Roboto Slab', serif;
   padding: 0 10px;
   box-sizing: border-box;
-  border-bottom: 5px solid var(--primary);
   z-index: 1000;
   .magazine-text__mobile {
     display: none;

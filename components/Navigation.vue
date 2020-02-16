@@ -10,19 +10,23 @@
       <div class="nav__meta">
         <div class="menu">
           <div class="menu__item">
-            <span>Blog</span>
+            <a href="https://blog.einfachIOTA.de" target="_blank">Blog</a>
           </div>
           <div class="menu__item">
-            <span>Learn</span>
+            <a href="https://learn.einfachIOTA.com" target="_blank">Learn</a>
           </div>
           <div class="menu__item">
-            <span>Shop</span>
+            <a href="https://shop.einfachIOTA.com" target="_blank">Shop</a>
           </div>
           <div class="menu__item">
-            <span>Community</span>
+            <a href="https://community.einfachIOTA.de" target="_blank"
+              >Community</a
+            >
           </div>
           <div class="menu__item">
-            <span>Accosiation</span>
+            <a href="https://accosiation.einfachIOTA.com" target="_blank"
+              >Accosiation</a
+            >
           </div>
         </div>
         <div class="socials">
@@ -38,16 +42,17 @@
         </div>
       </div>
       <div class="nav__user">
-        <div class="btn btn--primary">
-          <span>Magazine pre-sale</span>
-        </div>
+        <Advertisement />
       </div>
     </div>
   </div>
 </template>
 
 <script>
-export default {}
+import Advertisement from './Advertisement'
+export default {
+  components: { Advertisement }
+}
 </script>
 
 <style lang="scss">
@@ -93,13 +98,13 @@ export default {}
           transform: rotate(180deg);
         }
       }
-      span {
+      a {
         font-size: 16px;
         font-weight: 900;
       }
       &.active {
         background-color: var(--primary);
-        span {
+        a {
           color: var(--white);
         }
         .button-clip {
@@ -111,6 +116,10 @@ export default {}
       }
       &:hover {
         background-color: var(--primary);
+        a {
+          color: var(--white);
+          text-decoration: none;
+        }
       }
     }
   }
@@ -143,7 +152,8 @@ export default {}
       display: flex;
       justify-content: center;
       align-items: center;
-      span {
+      cursor: pointer;
+      a {
         font-size: 12px;
       }
     }
