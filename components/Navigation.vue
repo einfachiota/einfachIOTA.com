@@ -100,7 +100,7 @@ export default {
         width: 48px;
         position: absolute;
         bottom: -7px;
-        transition: var(--transition);
+        transition: all 0.3s ease-in-out;
         &.top {
           bottom: auto;
           top: -7px;
@@ -108,8 +108,11 @@ export default {
         }
       }
       a {
+        color: black;
         font-size: 16px;
         font-weight: 900;
+        text-decoration: none;
+        transition: all 0.3s ease-in-out;
       }
       &.active {
         background-color: var(--primary);
@@ -126,7 +129,7 @@ export default {
       &:hover {
         background-color: var(--primary);
         a {
-          color: var(--white);
+          filter: invert(100%);
           text-decoration: none;
         }
       }
@@ -153,7 +156,7 @@ export default {
   }
   &__meta {
     display: flex;
-    background-color: var(--light_50);
+    background-color: transparent;
     height: 40px;
     .menu__item {
       height: 30px;
@@ -163,6 +166,7 @@ export default {
       align-items: center;
       cursor: pointer;
       a {
+        color: black;
         font-size: 12px;
       }
     }

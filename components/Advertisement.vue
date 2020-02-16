@@ -1,10 +1,11 @@
 <template>
   <div class="magazine-ad">
+    <img src="~/assets/icons/magazine1.png" class="mag-mini" />
     <span class="magazine-text">{{ $t('advertisement.text') }}</span>
     <span class="magazine-text__mobile">{{
       $t('advertisement.text_short')
     }}</span>
-    <a :href="url" target="_blank" class="el-button el-button--primary">
+    <a :href="url" target="_blank" class="btn btn--primary">
       {{ $t('advertisement.button') }}
     </a>
   </div>
@@ -57,18 +58,19 @@ export default {
   color: var(--dark);
   font-size: 24px;
   font-weight: bold;
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Open Sans', serif;
   padding: 0 10px;
   box-sizing: border-box;
   z-index: 1000;
+  .mag-mini {
+    height: 50px;
+  }
+  .magazine-text {
+    font-size: 20px;
+    margin-right: 25px;
+  }
   .magazine-text__mobile {
     display: none;
-  }
-  .el-button {
-    animation: shake-animation 3.72s ease infinite;
-    transform-origin: 50% 50%;
-    margin-left: 20px;
-    text-decoration: none;
   }
 }
 @media only screen and (max-width: 920px) {

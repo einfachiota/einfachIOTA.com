@@ -35,6 +35,7 @@ export default {
   border-radius: 50px;
   font-weight: 900;
   font-size: 14px;
+  text-decoration: none;
   &--primary {
     color: var(--white);
     background-color: var(--primary);
