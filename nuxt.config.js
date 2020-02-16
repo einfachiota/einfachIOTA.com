@@ -56,7 +56,7 @@ module.exports = {
       messages: {
         en: {
           greeting: 'Hello world!',
-          ei_description: 'IOTA simply explained.',
+          ei_description: 'IOTA simple and easy.',
           ei_mission:
             'Our mission is to provide content around IOTA and to explain IOTA in simple language.',
           footer: {
@@ -121,7 +121,7 @@ module.exports = {
     extend(config, ctx) {}
   },
   env: {
-    shopUrl: process.env.SHOP_URL || 'http://localhost:5001',
+    shopUrl: process.env.SHOP_URL || 'http://localhost:3001',
     refAddress:
       process.env.REF_ADDRESS ||
       'IKTYKKCZFZZECSFIJYWYSUUTXCIBNIFPFSPGUIUUAYONDYUSHEZVQBNPDYUTDMTNTHBLABCYYLZKLGIVCINGBALQVX'
