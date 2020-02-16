@@ -2,16 +2,18 @@
   <div class="page">
     <Navigation />
     <Hero />
+    <Content />
     <Footer />
   </div>
 </template>
 
 <script>
 import Hero from '../components/Hero'
+import Content from '../components/Content'
 import Navigation from '~/components/Navigation.vue'
 import Footer from '~/components/Footer.vue'
 export default {
-  components: { Navigation, Hero, Footer },
+  components: { Navigation, Hero, Content, Footer },
   data() {
     return {
       url: `${process.env.shopUrl}/en?refLink=${process.env.refAddress}`
@@ -21,8 +23,23 @@ export default {
 </script>
 
 <style lang="scss">
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  padding: 0 30px;
+  background-color: var(--light);
+  border-radius: 50px;
+  font-weight: 900;
+  font-size: 14px;
+  &--primary {
+    color: var(--white);
+    background-color: var(--primary);
+  }
+}
+
 .container {
-  margin: 0;
   padding: 0;
 }
 

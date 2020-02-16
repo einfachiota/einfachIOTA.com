@@ -26,6 +26,7 @@ export default {}
   left: 0;
   overflow: hidden;
   z-index: -100;
+  margin-top: 100px;
   video {
     position: absolute;
     top: 0;
@@ -57,6 +58,13 @@ export default {}
       max-width: 50%;
       height: 100%;
     }
+  }
+}
+.hero {
+  text-align: center;
+  .sub-heading {
+    margin-top: 0px;
+    font-size: 2.5em;
   }
 }
 </style>

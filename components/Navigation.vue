@@ -68,9 +68,16 @@ export default {}
 
 <style lang="scss">
 .nav {
+  position: fixed;
+  top: 0;
+  left: 0;
   display: flex;
   justify-content: space-between;
   height: 100px;
+  width: 100%;
+  z-index: 1000;
+  background-color: var(--white);
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.25);
   .logo {
     height: 70px;
     min-width: 70px;
@@ -149,17 +156,6 @@ export default {}
     flex-direction: column;
     align-items: flex-end;
     width: auto;
-  }
-  .btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 40px;
-    padding: 0 30px;
-    background-color: var(--light);
-    border-radius: 50px;
-    font-weight: 900;
-    font-size: 14px;
   }
 }
 </style>

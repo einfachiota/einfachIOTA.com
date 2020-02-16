@@ -22,7 +22,7 @@ html {
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
 }
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,900,700|Roboto+Slab:700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,900,700|Roboto+Slab:700');
 
 body {
   margin: 0;
@@ -132,14 +132,6 @@ button.el-button.el-button--light {
   background-color: var(--primary) !important;
   &:hover {
     color: var(--white) !important;
-  }
-}
-.hero {
-  text-align: center;
-  padding-top: 80px;
-  .sub-heading {
-    margin-top: 0px;
-    font-size: 2.5em;
   }
 }
 .divider {
