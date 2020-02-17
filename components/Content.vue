@@ -19,7 +19,7 @@
                 <span>{{ listItem }}</span>
               </div>
             </div>
-            <div class="link">
+            <div class="link btn btn--primary">
               <a :href="item.link.url" target="_blank">{{ item.link.text }}</a>
             </div>
           </div>
@@ -162,9 +162,8 @@ p {
     margin: 8px 0;
     img {
       margin-top: 1px;
-      height: 20px;
+      height: 16px;
       width: 20px;
-      background: var(--light);
       border-radius: 10px;
       margin-right: 8px;
     }

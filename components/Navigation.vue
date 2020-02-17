@@ -79,7 +79,6 @@ export default {
   .logo {
     height: 70px;
     min-width: 70px;
-    background-color: var(--light);
     border-radius: 100%;
     padding: 0;
     margin: 15px;
@@ -91,10 +90,11 @@ export default {
       position: relative;
       display: flex;
       justify-content: center;
-      background-color: var(--light_50);
+      background-color: transparent;
       border-radius: 10px;
       margin: 0 10px;
       padding: 15px 30px;
+      transition: all 0.3s ease-in-out;
       .button-clip {
         height: 7px;
         width: 48px;
@@ -138,6 +138,7 @@ export default {
   .socials {
     display: flex;
     align-items: center;
+    justify-content: center;
     height: 40px;
     &__item {
       height: 30px;
@@ -151,6 +152,12 @@ export default {
       img {
         height: 20px;
         width: 20px;
+        transition: all 0.3s ease-in-out;
+      }
+      &:hover {
+        img {
+          transform: scale(1.5);
+        }
       }
     }
   }
@@ -158,16 +165,29 @@ export default {
     display: flex;
     background-color: transparent;
     height: 40px;
+    background: rgb(234, 235, 243);
+    background: linear-gradient(
+      90deg,
+      rgba(234, 235, 243, 0) 0%,
+      rgba(234, 235, 243, 0.12368697478991597) 10%,
+      rgba(234, 235, 243, 0.2777485994397759) 100%
+    );
     .menu__item {
-      height: 30px;
+      height: 28px;
       padding: 0 15px;
+      border-radius: 5px;
       display: flex;
       justify-content: center;
       align-items: center;
-      cursor: pointer;
+      background-color: var(--primary_0);
       a {
+        background-color: none;
         color: black;
         font-size: 12px;
+      }
+      &:hover {
+        cursor: pointer;
+        background-color: var(--primary);
       }
     }
   }

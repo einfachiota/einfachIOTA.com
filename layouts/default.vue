@@ -66,7 +66,10 @@ a {
   color: var(--primary);
 }
 :root {
-  --primary: #00b7c5;
+  --primary: rgba(0, 183, 197, 1);
+  --primary_50: rgba(0, 183, 197, 0.5);
+  --primary_0: rgba(0, 183, 197, 0);
+  --primary_light: #00dbeb;
   --primary-darken: #03a3af;
   --secondary: #0b5d9e;
   --secondary-2: #5ab0b2;
@@ -88,7 +91,7 @@ a {
   --border-radius: 10px;
   --border-radius-sm: 5px;
   --box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
-  --transition-in-out: all 0.3s ease-in-out;
+  --transition: all 0.3s ease-in-out;
 }
 .el-footer {
   padding: 0 0 !important;

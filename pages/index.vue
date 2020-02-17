@@ -36,9 +36,19 @@ export default {
   font-weight: 900;
   font-size: 14px;
   text-decoration: none;
+  transition: var(--transition);
+  img {
+    margin-right: 8px;
+  }
+  &:hover {
+    cursor: pointer;
+  }
   &--primary {
     color: var(--white);
     background-color: var(--primary);
+    &:hover {
+      background-color: var(--primary_light);
+    }
   }
 }
 

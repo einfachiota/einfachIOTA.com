@@ -1,11 +1,7 @@
 <template>
   <div class="magazine-ad">
-    <img src="~/assets/icons/magazine1.png" class="mag-mini" />
-    <span class="magazine-text">{{ $t('advertisement.text') }}</span>
-    <span class="magazine-text__mobile">{{
-      $t('advertisement.text_short')
-    }}</span>
     <a :href="url" target="_blank" class="btn btn--primary">
+      <img src="~/assets/icons/onsale.svg" />
       {{ $t('advertisement.button') }}
     </a>
   </div>

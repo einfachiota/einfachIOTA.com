@@ -75,7 +75,7 @@ module.exports = {
           advertisement: {
             text: 'First einfachIOTA magazine pre-sale - limited!',
             text_short: 'Magazine pre-sale',
-            button: 'Visit Shop'
+            button: 'Magazine pre-sale'
           }
         },
         de: {
