@@ -32,14 +32,13 @@ export default {}
 <style lang="scss">
 .hero {
   position: relative;
-  height: calc(100vh - 100px);
+  height: calc(100vh);
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
   overflow: hidden;
   z-index: -100;
-  margin-top: 100px;
   .rounded-edge {
     position: absolute;
     bottom: -3px;

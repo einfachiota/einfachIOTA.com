@@ -2,12 +2,13 @@
   <div class="nav">
     <div class="nav__primary">
       <div class="logo">
-        <img src="~/assets/icons/logo.svg" alt />
+        <img src="~/assets/icons/logo-white-outline.svg" alt />
       </div>
       <div class="menu"></div>
     </div>
     <div class="nav__secondary">
       <div class="nav__meta">
+        <img src="~/assets/icons/nav-edge.svg" alt class="nav-edge" />
         <div class="menu">
           <div class="menu__item">
             <a href="https://blog.einfachIOTA.de" target="_blank">Blog</a>
@@ -51,6 +52,7 @@
         </div>
       </div>
       <div class="nav__user">
+        <img src="~/assets/icons/nav-edge.svg" alt class="nav-edge" />
         <Advertisement />
       </div>
     </div>
@@ -74,8 +76,6 @@ export default {
   height: 100px;
   width: 100%;
   z-index: 1000;
-  background-color: var(--white);
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.25);
   .logo {
     height: 70px;
     min-width: 70px;
@@ -127,7 +127,7 @@ export default {
         }
       }
       &:hover {
-        background-color: var(--primary);
+        background-color: var(--primary_light);
         a {
           filter: invert(100%);
           text-decoration: none;
@@ -162,16 +162,21 @@ export default {
     }
   }
   &__meta {
+    position: relative;
     display: flex;
     background-color: transparent;
     height: 40px;
-    background: rgb(234, 235, 243);
-    background: linear-gradient(
-      90deg,
-      rgba(234, 235, 243, 0) 0%,
-      rgba(234, 235, 243, 0.12368697478991597) 10%,
-      rgba(234, 235, 243, 0.2777485994397759) 100%
-    );
+    background-color: var(--white);
+    border-radius: 0 0 0 10px;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    padding-left: 5px;
+    .nav-edge {
+      position: absolute;
+      top: -1px;
+      left: -15px;
+      height: 15px;
+    }
     .menu__item {
       height: 28px;
       padding: 0 15px;
@@ -180,6 +185,7 @@ export default {
       justify-content: center;
       align-items: center;
       background-color: var(--primary_0);
+      margin: 0 3px;
       a {
         background-color: none;
         color: black;
@@ -187,16 +193,26 @@ export default {
       }
       &:hover {
         cursor: pointer;
-        background-color: var(--primary);
       }
     }
   }
   &__user {
+    position: relative;
     height: 60px;
     padding-right: 10px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    background-color: var(--white);
+    padding-left: 10px;
+    border-radius: 0 0 0 25px;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.1);
+    .nav-edge {
+      position: absolute;
+      top: -1px;
+      left: -30px;
+      height: 30px;
+    }
   }
   &__primary {
     display: flex;
