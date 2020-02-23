@@ -1,8 +1,13 @@
 <template>
-  <div class="nav">
+  <div class="nav open">
     <div class="nav__primary">
       <div class="logo">
         <img src="~/assets/icons/logo-white-outline.svg" alt />
+      </div>
+      <div class="mobile-btn">
+        <div class="mobile-btn__line"></div>
+        <div class="mobile-btn__line"></div>
+        <div class="mobile-btn__line"></div>
       </div>
       <div class="menu"></div>
     </div>
@@ -10,6 +15,9 @@
       <div class="nav__meta">
         <img src="~/assets/icons/nav-edge.svg" alt class="nav-edge" />
         <div class="menu">
+          <div class="menu__item active">
+            <a href="https://blog.einfachIOTA.de" target="_blank">Home</a>
+          </div>
           <div class="menu__item">
             <a href="https://blog.einfachIOTA.de" target="_blank">Blog</a>
           </div>
@@ -73,6 +81,7 @@ export default {
   left: 0;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   height: 100px;
   width: 100%;
   z-index: 1000;
@@ -209,8 +218,8 @@ export default {
     box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.1);
     .nav-edge {
       position: absolute;
-      top: -1px;
-      left: -30px;
+      top: 0;
+      left: -29px;
       height: 30px;
     }
   }
@@ -218,11 +227,122 @@ export default {
     display: flex;
     width: auto;
   }
+  .mobile-btn {
+    display: none;
+  }
   &__secondary {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     width: auto;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .nav {
+    &__primary {
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      height: 100px;
+      .mobile-btn {
+        position: relative;
+        height: 50px;
+        width: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-right: 20px;
+        border-radius: 10px;
+        background-color: var(--white);
+        &__line {
+          position: absolute;
+          background-color: var(--dark);
+          border-radius: 2px;
+          height: 3px;
+          width: 20px;
+          transition: all 0.3s ease-in-out;
+          &:nth-child(1) {
+            top: 17px;
+          }
+          &:nth-child(2) {
+            top: 24px;
+            width: 16px;
+          }
+          &:nth-child(3) {
+            bottom: 16px;
+          }
+        }
+      }
+      .menu {
+        display: none;
+      }
+    }
+    &__secondary {
+      height: calc(100vh - 100px);
+      width: 100%;
+      .nav-edge {
+        display: none;
+      }
+    }
+    &__meta {
+      background-color: transparent;
+      box-shadow: none;
+      flex-direction: column;
+      width: 100%;
+      height: auto;
+      margin-top: 20px;
+      display: none;
+      .menu {
+        flex-direction: column;
+        margin: 0 20px;
+        &__item {
+          width: 100%;
+          background: white;
+          border-radius: 10px;
+          height: 50px;
+          margin: 0 0 20px;
+          box-sizing: border-box;
+          a {
+            width: 100%;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+    &__user {
+      display: none;
+    }
+    &.open {
+      height: 100vh;
+      background-color: var(--light);
+      .nav__primary {
+        .mobile-btn {
+          &__line {
+            &:nth-child(1) {
+              top: 24px;
+              transform: rotate(45deg);
+            }
+            &:nth-child(2) {
+              opacity: 0.5;
+              width: 3px;
+            }
+            &:nth-child(3) {
+              transform: rotate(-45deg);
+              bottom: 23px;
+            }
+          }
+        }
+      }
+      .nav__meta {
+        display: flex;
+      }
+    }
   }
 }
 </style>
