@@ -4,7 +4,7 @@
       <div class="container">
         <div v-bind:class="{ inverted: item.layout_inverted }" class="row">
           <div class="col center-center">
-            <img :src="`/assets/icons/${item.icon}`" alt />
+            <img :src="`/assets/icons/${item.icon}`" alt class="iso-icon" />
           </div>
           <div class="col">
             <h2>{{ item.heading }}</h2>
@@ -123,16 +123,31 @@ export default {
 <style lang="scss">
 .content {
   padding: 150px 0;
+  @media only screen and (max-width: 1240px) {
+    padding: 130px 50px;
+  }
+  @media only screen and (max-width: 900px) {
+    padding: 100px 30px;
+  }
+  @media only screen and (max-width: 500px) {
+    padding: 80px 20px;
+  }
 }
 .container {
   width: 1200px;
   margin: 0 auto;
+  @media only screen and (max-width: 1240px) {
+    width: 100%;
+  }
 }
 .row {
   display: flex;
   margin: 0 -25px;
   &.inverted {
     flex-direction: row-reverse;
+  }
+  @media only screen and (max-width: 900px) {
+    flex-wrap: wrap;
   }
 }
 .col {
@@ -145,15 +160,31 @@ export default {
     justify-content: center;
     align-items: center;
   }
+  @media only screen and (max-width: 900px) {
+    width: 100%;
+    p,
+    span {
+      font-size: 14px;
+    }
+    .iso-icon {
+      max-width: 80%;
+      margin-bottom: 30px;
+    }
+  }
 }
 h2 {
   font-family: 'Open Sans';
   font-size: 64px;
   color: var(--dark);
   text-transform: uppercase;
+  @media only screen and (max-width: 500px) {
+    font-size: 42px;
+  }
+  @media only screen and (max-width: 330px) {
+    font-size: 32px;
+  }
 }
-p {
-}
+
 .list {
   margin-bottom: 50px;
   &__item {
@@ -186,6 +217,15 @@ p {
   a {
     color: var(--white);
     text-decoration: none;
+  }
+
+  @media only screen and (max-width: 1240px) {
+    .content {
+      .container {
+        width: 100%;
+        margin: 0 20px;
+      }
+    }
   }
 }
 </style>
