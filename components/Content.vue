@@ -172,6 +172,7 @@ export default {
     }
   }
 }
+
 h2 {
   font-family: 'Open Sans';
   font-size: 64px;

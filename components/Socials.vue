@@ -30,12 +30,18 @@ export default {}
   align-items: center;
   padding: 100px;
   background-color: var(--light);
+  @media only screen and (max-width: 520px) {
+    padding: 50px 0;
+  }
   h3 {
     color: var(--dark);
     font-family: 'Open Sans';
     font-weight: 900;
     font-size: 42px;
     margin-bottom: 20px;
+    @media only screen and (max-width: 520px) {
+      font-size: 32px;
+    }
   }
   p {
     color: var(--dark);
@@ -45,6 +51,18 @@ export default {}
     justify-content: center;
     .social {
       margin: 0 25px;
+      @media only screen and (max-width: 520px) {
+        margin: 0 20px;
+        width: 100px;
+      }
+      @media only screen and (max-width: 450px) {
+        margin: 0 15px;
+        width: 80px;
+      }
+      @media only screen and (max-width: 350px) {
+        margin: 0 10px;
+        width: 60px;
+      }
     }
   }
 }
