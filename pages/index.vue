@@ -25,6 +25,10 @@ export default {
 </script>
 
 <style lang="scss">
+.page {
+  overflow: hidden;
+}
+
 .btn {
   display: flex;
   justify-content: center;

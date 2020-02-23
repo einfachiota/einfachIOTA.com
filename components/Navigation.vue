@@ -1,5 +1,5 @@
 <template>
-  <div class="nav open">
+  <div class="nav">
     <div class="nav__primary">
       <div class="logo">
         <img src="~/assets/icons/logo-white-outline.svg" alt />
@@ -282,6 +282,7 @@ export default {
     &__secondary {
       height: calc(100vh - 100px);
       width: 100%;
+      display: none;
       .nav-edge {
         display: none;
       }
@@ -340,6 +341,9 @@ export default {
         }
       }
       .nav__meta {
+        display: flex;
+      }
+      .nav__secondary {
         display: flex;
       }
     }
