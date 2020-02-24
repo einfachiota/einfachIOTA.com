@@ -1,7 +1,7 @@
 <template>
   <div class="hero">
     <video id="bg-video" autoplay muted loop>
-      <source src="~/assets/09_events.mp4" type="video/mp4" />
+      <source src="~/assets/events.webm" type="video/webm" />
     </video>
     <div class="layer"></div>
     <div class="hello">
