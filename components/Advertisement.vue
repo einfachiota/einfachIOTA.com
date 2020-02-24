@@ -1,5 +1,9 @@
 <template>
-  <a :href="url" target="_blank" class="btn btn--primary">
+  <a
+    :href="$t('advertisement.shop_url') + refLink"
+    target="_blank"
+    class="btn btn--primary"
+  >
     <img src="~/assets/icons/onsale.svg" />
     {{ $t('advertisement.button') }}
   </a>
@@ -9,7 +13,7 @@
 export default {
   data() {
     return {
-      url: `${process.env.shopUrl}?lang=en&refLink=${process.env.refAddress}`
+      refLink: `?refLink=${process.env.refAddress}`
     }
   }
 }
