@@ -19,7 +19,10 @@
                 <span>{{ listItem }}</span>
               </div>
             </div>
-            <div class="link btn btn--primary">
+            <div
+              v-bind:class="{ 'link-disabled': item.link.disabled }"
+              class="link btn btn--primary"
+            >
               <a :href="item.link.url" target="_blank">{{ item.link.text }}</a>
             </div>
           </div>
@@ -62,8 +65,9 @@ export default {
             'Many examples as Open Source code'
           ],
           link: {
-            text: 'Discover Learn',
-            url: 'https://learn.einfachiota.com'
+            text: 'Learn coming soon',
+            url: '',
+            disabled: true
           }
         },
         {
@@ -110,8 +114,9 @@ export default {
             'einfachIOTA e.V. A German non-profit association (soon)'
           ],
           link: {
-            text: 'Discover Association',
-            url: 'https://association.einfachiota.com'
+            text: 'Association coming soon',
+            url: '',
+            disabled: true
           }
         }
       ]
@@ -218,6 +223,15 @@ h2 {
   a {
     color: var(--white);
     text-decoration: none;
+  }
+  &-disabled {
+    color: currentColor;
+    cursor: not-allowed;
+    opacity: 0.5;
+    text-decoration: none;
+    a {
+      cursor: not-allowed;
+    }
   }
 
   @media only screen and (max-width: 1240px) {
