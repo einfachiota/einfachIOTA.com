@@ -11,9 +11,9 @@ export default {
 </script>
 
 <style lang="scss">
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,900,700|Roboto+Slab:700');
+
 html {
-  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, 'Helvetica Neue', Arial, sans-serif;
   font-size: 16px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
@@ -22,7 +22,6 @@ html {
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
 }
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,900,700|Roboto+Slab:700');
 
 body {
   margin: 0;
