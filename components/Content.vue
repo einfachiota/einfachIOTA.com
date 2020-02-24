@@ -50,14 +50,14 @@ export default {
           ],
           link: {
             text: 'Discover Blog',
-            url: 'https://blog.einfachiota.com'
+            url: 'https://blog.einfachiota.de'
           }
         },
         {
           layout_inverted: true,
           heading: 'Learn',
           description:
-            'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est.',
+            'A learning area is planned. An interactive learning platform with IOTA based content. This content is conveyed in text form, but also in a playful way, for example with a quiz. Here the learner has the opportunity to take different paths (such as different programming languages) and to level his character.',
           icon: 'learn.svg',
           list: [
             'Tutorials and Workshops',
