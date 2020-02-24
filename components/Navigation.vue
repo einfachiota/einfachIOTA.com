@@ -1,10 +1,10 @@
 <template>
-  <div class="nav">
+  <div :class="{ open: navOpen }" class="nav">
     <div class="nav__primary">
       <div class="logo">
         <img src="~/assets/icons/logo-white-outline.svg" alt />
       </div>
-      <div class="mobile-btn">
+      <div @click="navOpen = !navOpen" class="mobile-btn">
         <div class="mobile-btn__line"></div>
         <div class="mobile-btn__line"></div>
         <div class="mobile-btn__line"></div>
@@ -62,7 +62,12 @@
 <script>
 import Advertisement from './Advertisement'
 export default {
-  components: { Advertisement }
+  components: { Advertisement },
+  data() {
+    return {
+      navOpen: false
+    }
+  }
 }
 </script>
 
@@ -221,6 +226,7 @@ export default {
   }
   .mobile-btn {
     display: none;
+    cursor: pointer;
   }
   &__secondary {
     display: flex;
