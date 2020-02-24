@@ -179,7 +179,6 @@ export default {
 }
 
 h2 {
-  font-family: 'Open Sans';
   font-size: 64px;
   color: var(--dark);
   text-transform: uppercase;
