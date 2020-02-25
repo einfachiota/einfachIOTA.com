@@ -2,7 +2,7 @@
   <div :class="{ open: navOpen }" class="nav">
     <div class="nav__primary">
       <div class="logo">
-        <img src="~/assets/icons/logo-white-outline.svg" alt />
+        <img src="~/assets/icons/logo.svg" alt />
       </div>
       <div @click="navOpen = !navOpen" class="mobile-btn">
         <div class="mobile-btn__line"></div>
@@ -155,6 +155,9 @@ export default {
       justify-content: center;
       align-items: center;
       margin: 0 2.5px;
+      a {
+        max-height: 20px;
+      }
       img {
         height: 20px;
         width: 20px;

@@ -11,7 +11,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,900,700|Roboto+Slab:700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,800,700|Roboto+Slab:700');
 
 html {
   font-size: 16px;
@@ -39,8 +39,8 @@ h2,
 h3,
 h4 {
   margin: 0;
-  font-weight: 700;
-  font-family: 'Roboto Slab', serif;
+  font-weight: 800;
+  font-family: 'Open Sans', serif;
 }
 h1 {
   font-size: 62px;

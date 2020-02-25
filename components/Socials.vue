@@ -3,16 +3,16 @@
     <h3>Follow us</h3>
     <div class="socials-list">
       <a href="https://twitter.com/einfachIOTA" target="_blank">
-        <img src="~/assets/icons/twitter_large.svg" alt="" class="social" />
+        <img src="~/assets/icons/twitter_large.svg" alt class="social" />
       </a>
       <a href="https://discord.gg/WdfXseU" target="_blank">
-        <img src="~/assets/icons/discord_large.svg" alt="" class="social" />
+        <img src="~/assets/icons/discord_large.svg" alt class="social" />
       </a>
       <a
         href="https://www.youtube.com/channel/UClEhfr5oh-bbH42XoXO4Pqw"
         target="_blank"
       >
-        <img src="~/assets/icons/youtube_large.svg" alt="" class="social" />
+        <img src="~/assets/icons/youtube_large.svg" alt class="social" />
       </a>
     </div>
   </div>
@@ -39,6 +39,7 @@ export default {}
     font-weight: 900;
     font-size: 42px;
     margin-bottom: 20px;
+    text-transform: uppercase;
     @media only screen and (max-width: 520px) {
       font-size: 32px;
     }
