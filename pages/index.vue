@@ -2,6 +2,8 @@
   <div class="page">
     <Navigation />
     <Hero />
+    <h2 class="headline">Latest News</h2>
+    <LatestNews />
     <Content />
     <Socials />
     <Footer />
@@ -10,12 +12,13 @@
 
 <script>
 import Hero from '../components/Hero'
+import LatestNews from '../components/LatestNews'
 import Content from '../components/Content'
 import Socials from '../components/Socials'
 import Navigation from '~/components/Navigation.vue'
 import Footer from '~/components/Footer.vue'
 export default {
-  components: { Navigation, Hero, Content, Socials, Footer },
+  components: { Navigation, Hero, LatestNews, Content, Socials, Footer },
   data() {
     return {
       url: `${process.env.shopUrl}/en?refLink=${process.env.refAddress}`
@@ -83,5 +86,10 @@ export default {
 .more {
   padding-top: 15px;
   font-size: 1.5em;
+}
+
+.headline {
+  margin: 30px;
+  margin-top: 50px;
 }
 </style>
