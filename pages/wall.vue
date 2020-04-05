@@ -135,7 +135,7 @@ export default {
 .container {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   width: 100%;
   max-width: 100%;
   margin: 0;
@@ -147,6 +147,9 @@ export default {
   background-color: white;
   border-radius: 5px;
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
+  &:nth-child(2) {
+    margin: 0 50px;
+  }
 }
 
 .page {
