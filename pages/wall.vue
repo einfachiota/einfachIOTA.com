@@ -2,27 +2,25 @@
   <div class="page">
     <Hero />
     <div class="wall">
-      <div class="preorde-container">
-        <img class="preorde" src="@/assets/preorder.jpg" alt="" />
+      <div class="preorder-container">
+        <img class="preorder" src="@/assets/preorder.jpg" alt="" />
       </div>
       <div class="container">
         <div v-for="(item, index) in items" :key="index" class="content">
-          <div class="container">
-            <div v-bind:class="{ inverted: item.layout_inverted }" class="row">
-              <div class="col center-center">
-                <img :src="`/assets/icons/${item.icon}`" alt class="iso-icon" />
-              </div>
-              <div class="col">
-                <h2>{{ item.heading }}</h2>
-                <div class="list">
-                  <div
-                    v-for="(listItem, i) in item.list"
-                    :key="i"
-                    class="list__item"
-                  >
-                    <img src="~/assets/icons/caret.svg" alt />
-                    <span>{{ listItem }}</span>
-                  </div>
+          <div v-bind:class="{ inverted: item.layout_inverted }" class="row">
+            <div class="image-wrapper">
+              <img :src="`/assets/icons/${item.icon}`" alt class="iso-icon" />
+            </div>
+            <div class="">
+              <h2 class="box-heading">{{ item.heading }}</h2>
+              <div class="list">
+                <div
+                  v-for="(listItem, i) in item.list"
+                  :key="i"
+                  class="list__item"
+                >
+                  <img src="~/assets/icons/caret.svg" alt />
+                  <span>{{ listItem }}</span>
                 </div>
               </div>
             </div>
@@ -57,7 +55,7 @@ export default {
         {
           layout_inverted: true,
           heading: 'Workshops',
-          icon: 'learn.svg',
+          icon: 'learn-inverted.svg',
           list: [
             'Tutorials and Workshops',
             'Glossary and FAQ',
@@ -72,7 +70,7 @@ export default {
         {
           layout_inverted: true,
           heading: 'Community',
-          icon: 'community.svg',
+          icon: 'heart-inverted.svg',
           list: [
             'Community Forum',
             'Discover user blogs or create your own',
@@ -95,28 +93,60 @@ export default {
   position: absolute;
   top: 0;
   left: 0;
-  max-width: 800px;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  .box-heading {
+    margin: 10px 0 5px;
+  }
+  .list__item {
+    margin-bottom: 5px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  .image-wrapper {
+    height: 250px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      height: 100%;
+    }
+  }
 }
 
 .preorder-container {
+  position: fixed;
+  top: 0;
+  display: flex;
   justify-content: center;
   width: 100%;
-}
-
-.preorder {
-  padding: 0 auto;
+  .preorder {
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
+  }
 }
 
 .container {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  margin: 20px auto;
-  margin-top: 100px;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  margin-bottom: 100px;
 }
 
 .content {
-  max-width: 30%;
+  padding: 50px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
 }
 
 .page {
